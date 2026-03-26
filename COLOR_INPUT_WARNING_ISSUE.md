@@ -10,6 +10,7 @@ The format is "#rrggbb" where rr, gg, bb are two-digit hexadecimal numbers.
 ```
 
 **Error Stack Trace Location:**
+
 - File: `packages/core/src/style_manager/view/PropertyView.ts`
 - Line: ~503 (in `__update()` method within callback execution)
 - Triggered during: Style Manager initialization when rendering color property definitions
@@ -31,23 +32,27 @@ The issue occurs at the **update callback invocation level**:
 Three normalization points were implemented in `PropertyView.ts`:
 
 #### 1. **normalizeColorOptions()** (lines 62-85)
+
 - Normalizes color values in property option arrays
 - Handles multiple object shapes: string items, `value` property, `id` property, `color` property
 - Recursively normalizes nested options arrays
 
 #### 2. **withNormalizedColorPropertyReads()** (lines 91-148)
+
 - Temporary wrapper that intercepts property model getters during callback execution
 - Wraps: `get()`, `getValue()`, `getDefaultValue()`, `getFullValue()`, `__getFullValue()`
 - Returns normalized hex values for color-related attribute reads
 - Restores original methods in finally block
 
 #### 3. **withColorInputAssignmentNormalization()** (lines 165-248)
+
 - Patches `HTMLInputElement.prototype.value` setter for color inputs
 - Patches `Element.prototype.setAttribute()` for color value attributes
 - Normalizes assignments before they reach the DOM
 - Handles cross-origin and iframe windows safely
 
-#### 4. **__update() Method** (lines 501-525)
+#### 4. **\_\_update() Method** (lines 501-525)
+
 - Pre-normalizes explicit value field before callback
 - Normalizes model attributes directly (attributes.value, attributes.default)
 - Wraps callback in both normalization helpers
@@ -68,7 +73,7 @@ __update(value: string) {
     const attrs = (this.model as any)?.attributes;
     const modelValue = attrs?.value;
     const modelDefault = attrs?.default;
-    
+
     // Normalize model attributes so direct access reads normalized values
     if (attrs && modelValue) {
       const normalizedModel = normalizeColorInputValue(modelValue);
@@ -78,7 +83,7 @@ __update(value: string) {
       const normalizedDefault = normalizeColorInputValue(modelDefault);
       if (normalizedDefault) attrs.default = normalizedDefault;
     }
-    
+
     normalizeColorOptions(attrs?.options);
     normalizeColorOptions((this.model as any)?.get?.('options'));
   }
@@ -98,6 +103,7 @@ __update(value: string) {
 ## Why It Didn't Fully Resolve
 
 Despite normalizing:
+
 - ✅ The explicit `value` field passed to callback
 - ✅ Model attributes (`attrs.value`, `attrs.default`)
 - ✅ Model getter method overrides
@@ -107,6 +113,7 @@ Despite normalizing:
 The error still occurs at line 503. This suggests:
 
 1. **The callback is still receiving non-normalized values from somewhere**, possibly:
+
    - Plugin code directly accessing model internals before our wrappers are active
    - Backbone model sync/trigger events that fire independently
    - Another code path that bypasses our wrapper timing
@@ -119,14 +126,17 @@ The error still occurs at line 503. This suggests:
 ## Next Steps for Future Investigation
 
 1. **Add callback logging:**
+
    - Instrument the update callback to log what values it receives
    - Check if normalized values are actually reaching the callback
 
 2. **Trace the plugin code:**
+
    - Search for custom plugin update implementations
    - Check if they're reading model values independently of our wrappers
 
 3. **Alternative approaches:**
+
    - Move normalization earlier (before callback is bound)
    - Replace the update callback reference with a normalized wrapper
    - Normalize default values at model definition time, not at render time

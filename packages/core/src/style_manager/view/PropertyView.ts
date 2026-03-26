@@ -30,9 +30,7 @@ const rgbStringToHexColor = (value: string) => {
     .map((part) => parseInt(part.trim(), 10));
   if (channels.length !== 3 || channels.some((channel) => Number.isNaN(channel))) return '';
 
-  return `#${channels
-    .map((channel) => Math.max(0, Math.min(255, channel)).toString(16).padStart(2, '0'))
-    .join('')}`;
+  return `#${channels.map((channel) => Math.max(0, Math.min(255, channel)).toString(16).padStart(2, '0')).join('')}`;
 };
 
 const normalizeColorInputValue = (value: string) => {
@@ -93,8 +91,7 @@ const withNormalizedColorPropertyReads = <T>(property: any, run: () => T) => {
 
   const originalGet = typeof property.get === 'function' ? property.get : undefined;
   const originalGetValue = typeof property.getValue === 'function' ? property.getValue : undefined;
-  const originalGetDefaultValue =
-    typeof property.getDefaultValue === 'function' ? property.getDefaultValue : undefined;
+  const originalGetDefaultValue = typeof property.getDefaultValue === 'function' ? property.getDefaultValue : undefined;
   const originalGetFullValue = typeof property.getFullValue === 'function' ? property.getFullValue : undefined;
   const originalGetInternalFullValue =
     typeof property.__getFullValue === 'function' ? property.__getFullValue : undefined;
@@ -224,11 +221,7 @@ const withColorInputAssignmentNormalization = <T>(el: HTMLElement, run: () => T)
     });
 
     ElementEl.prototype.setAttribute = function (name: string, value: string) {
-      if (
-        this instanceof InputEl &&
-        this.type === 'color' &&
-        String(name).toLowerCase() === 'value'
-      ) {
+      if (this instanceof InputEl && this.type === 'color' && String(name).toLowerCase() === 'value') {
         const normalizedColor = normalizeColorInputValue(typeof value === 'string' ? value : `${value ?? ''}`);
         if (!normalizedColor) return;
         setAttribute.call(this, name, normalizedColor);
@@ -482,7 +475,7 @@ export default class PropertyView extends View<Property> {
       const attrs = (this.model as any)?.attributes;
       const modelValue = attrs?.value;
       const modelDefault = attrs?.default;
-      
+
       // Normalize model attributes so direct access reads normalized values
       if (attrs && modelValue) {
         const normalizedModel = normalizeColorInputValue(modelValue);
@@ -492,7 +485,7 @@ export default class PropertyView extends View<Property> {
         const normalizedDefault = normalizeColorInputValue(modelDefault);
         if (normalizedDefault) attrs.default = normalizedDefault;
       }
-      
+
       normalizeColorOptions(attrs?.options);
       normalizeColorOptions((this.model as any)?.get?.('options'));
     }
@@ -504,7 +497,7 @@ export default class PropertyView extends View<Property> {
             ...this._getClbOpts(),
             value: normalizedValue,
           });
-        })
+        }),
       );
   }
 

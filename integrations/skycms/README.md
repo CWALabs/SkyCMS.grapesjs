@@ -53,14 +53,14 @@ The sync helper script is:
 ### Standard sequence
 
 1. Check status:
-	- `pnpm -C integrations/skycms sync:status`
+   - `pnpm -C integrations/skycms sync:status`
 2. Sync mirror branch from upstream source:
-	- `pnpm -C integrations/skycms sync:upstream`
+   - `pnpm -C integrations/skycms sync:upstream`
 3. Recreate/update automation branch from mirror branch:
-	- `pnpm -C integrations/skycms sync:prepare`
+   - `pnpm -C integrations/skycms sync:prepare`
 4. Resolve any conflicts/adjustments on `automation/upstream-master-sync`
 5. Merge automation branch into SkyCMS custom branch:
-	- `pnpm -C integrations/skycms sync:merge`
+   - `pnpm -C integrations/skycms sync:merge`
 
 ### Remote assumptions
 
@@ -122,12 +122,12 @@ Examples:
 The playground can mirror SkyCMS layout-based plugin selection via URL query.
 
 1. Start dev server:
-	- `pnpm -C integrations/skycms dev`
+   - `pnpm -C integrations/skycms dev`
 2. Open one of these URLs:
-	- Default mode (basic/forms fallback): `http://localhost:5175/`
-	- Bootstrap 5 mode: `http://localhost:5175/?layout=bootstrap5`
-	- Bootstrap 4 mode: `http://localhost:5175/?layout=bootstrap4`
-	- Tailwind mode: `http://localhost:5175/?layout=tailwind`
+   - Default mode (basic/forms fallback): `http://localhost:5175/`
+   - Bootstrap 5 mode: `http://localhost:5175/?layout=bootstrap5`
+   - Bootstrap 4 mode: `http://localhost:5175/?layout=bootstrap4`
+   - Tailwind mode: `http://localhost:5175/?layout=tailwind`
 
 This enables quick local verification of the two layout-specific block sets (Bootstrap and Tailwind) before deploying assets into SkyCMS.
 

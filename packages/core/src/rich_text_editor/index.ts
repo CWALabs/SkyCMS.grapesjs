@@ -103,7 +103,9 @@ export default class RichTextEditorModule extends Module<RichTextEditorConfig & 
     }
 
     this.nativeRteRemovedWarned = true;
-    this.em.logWarning('The built-in GrapesJS Rich Text Editor has been disabled in this fork. Register a custom RTE via editor.setCustomRte(...) to enable rich text editing.');
+    this.em.logWarning(
+      'The built-in GrapesJS Rich Text Editor has been disabled in this fork. Register a custom RTE via editor.setCustomRte(...) to enable rich text editing.',
+    );
   }
 
   __trgCustom() {

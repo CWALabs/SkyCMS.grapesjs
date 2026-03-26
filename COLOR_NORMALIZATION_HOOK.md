@@ -11,6 +11,7 @@ The color normalization system in GrapesJS PropertyView implements a multi-layer
 **Purpose:** Convert any color format to 6-digit hex
 
 **Supported Input Formats:**
+
 - Named colors: `black` → `#000000`, `white` → `#ffffff`
 - Short hex: `#fff` → `#ffffff`, `#f00` → `#ff0000`
 - Long hex: `#ffffff` (passthrough)
@@ -48,6 +49,7 @@ const normalizeColorInputValue = (value: string) => {
 **Purpose:** Normalize color values within property definition option arrays
 
 **Handles:**
+
 - String array items (bare color names)
 - Object with `value` property
 - Object with `id` property (internal color ID)
@@ -89,6 +91,7 @@ const normalizeColorOptions = (options: any) => {
 **Purpose:** Temporarily override property model getters to return normalized values during callback execution
 
 **Wrapped Methods:**
+
 - `get(key)` - Returns normalized value for `value`, `default`, `defaults` keys
 - `getValue()` - Returns normalized string
 - `getDefaultValue()` - Returns normalized string
@@ -137,10 +140,12 @@ const withNormalizedColorPropertyReads = <T>(property: any, run: () => T) => {
 **Purpose:** Intercept and normalize HTML input element color assignments at the DOM API level
 
 **Intercepts:**
+
 - `HTMLInputElement.prototype.value` setter - Catches `input.value = "black"`
 - `Element.prototype.setAttribute()` - Catches `el.setAttribute('value', 'white')`
 
 **Safety Features:**
+
 - Safe cross-origin iframe handling
 - Graceful fallback if prototypes unavailable
 - Cleanup in finally block
@@ -154,7 +159,7 @@ const withColorInputAssignmentNormalization = <T>(el: HTMLElement, run: () => T)
   windows.forEach((currentWindow) => {
     const InputEl = currentWindow.HTMLInputElement;
     const ElementEl = currentWindow.Element;
-    
+
     if (!InputEl?.prototype || !ElementEl?.prototype) return;
 
     const valueDescriptor = Object.getOwnPropertyDescriptor(InputEl.prototype, 'value');
@@ -189,6 +194,7 @@ const withColorInputAssignmentNormalization = <T>(el: HTMLElement, run: () => T)
 **Purpose:** Main entry point that orchestrates all normalization layers
 
 **Execution Flow:**
+
 1. Determine if property is a color type
 2. Pre-normalize the explicit value field
 3. Normalize model attributes (value, default)
@@ -214,7 +220,7 @@ __update(value: string) {
     if (attrs?.default) {
       attrs.default = normalizeColorInputValue(attrs.default) || attrs.default;
     }
-    
+
     // Step 2: Normalize options arrays
     normalizeColorOptions(attrs?.options);
     normalizeColorOptions((this.model as any)?.get?.('options'));
@@ -248,7 +254,6 @@ const NAMED_COLOR_TO_HEX: Record<string, string> = {
 
 - **Normalize short hex:** `#fff` → `#ffffff`
   - Pattern: `#ABC` → `#AABBCC`
-  
 - **RGB to hex:** `rgb(255, 0, 0)` or `rgba(255, 0, 0, 1)` → `#ff0000`
   - Takes first 3 RGB channels, ignores alpha
   - Clamps values to 0-255 range
@@ -260,7 +265,7 @@ const NAMED_COLOR_TO_HEX: Record<string, string> = {
 
 1. **Property Render** → calls `setValue()`
 2. **setValue()** → calls `__normalizeInputValue()` then `__update()`
-3. **__update()** → applies full normalization stack
+3. **\_\_update()** → applies full normalization stack
 4. **Display** → input element receives normalized hex value
 
 ### Data Flow
@@ -291,6 +296,7 @@ __update(normalizedValue)
 **File:** `packages/core/test/specs/style_manager/view/PropertyView.ts`
 
 Tests verify:
+
 - ✅ Normalized colors pass to update callback
 - ✅ Direct color input assignment is normalized
 - ✅ Model reads return normalized values during callback

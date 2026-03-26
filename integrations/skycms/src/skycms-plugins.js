@@ -20,31 +20,31 @@ import { cosmosImageWidgetPlugin } from './custom/imagecontainerplugin.js';
 import { generateGUID } from './custom/generateguid.js';
 import { ccmsArticleTitleHTML, ckeditorBLockComponentHTML } from './custom/component-constants.js';
 
-function normalizePlugin( pluginModule ) {
-    return pluginModule.default || pluginModule;
+function normalizePlugin(pluginModule) {
+  return pluginModule.default || pluginModule;
 }
 
 const pluginRegistry = {
-    'gjs-blocks-basic': normalizePlugin( gjsBlocksBasicModule ),
-    'grapesjs-plugin-forms': normalizePlugin( gjsFormsModule ),
-    'grapesjs-plugin-ckeditor': normalizePlugin( gjsCkeditorModule ),
-    'grapesjs-preset-webpage': normalizePlugin( gjsPresetWebpageModule ),
-    'grapesjs-component-countdown': normalizePlugin( gjsCountdownModule ),
-    'grapesjs-plugin-export': normalizePlugin( gjsExportModule ),
-    'grapesjs-tabs': normalizePlugin( gjsTabsModule ),
-    'grapesjs-custom-code': normalizePlugin( gjsCustomCodeModule ),
-    'grapesjs-touch': normalizePlugin( gjsTouchModule ),
-    'grapesjs-parser-postcss': normalizePlugin( gjsParserPostCssModule ),
-    'grapesjs-tooltip': normalizePlugin( gjsTooltipModule ),
-    'grapesjs-tui-image-editor': normalizePlugin( gjsTuiImageEditorModule ),
-    'grapesjs-typed': normalizePlugin( gjsTypedModule ),
-    'grapesjs-style-bg': normalizePlugin( gjsStyleBgModule ),
-    'grapesjs-navbar': normalizePlugin( gjsNavbarModule )
+  'gjs-blocks-basic': normalizePlugin(gjsBlocksBasicModule),
+  'grapesjs-plugin-forms': normalizePlugin(gjsFormsModule),
+  'grapesjs-plugin-ckeditor': normalizePlugin(gjsCkeditorModule),
+  'grapesjs-preset-webpage': normalizePlugin(gjsPresetWebpageModule),
+  'grapesjs-component-countdown': normalizePlugin(gjsCountdownModule),
+  'grapesjs-plugin-export': normalizePlugin(gjsExportModule),
+  'grapesjs-tabs': normalizePlugin(gjsTabsModule),
+  'grapesjs-custom-code': normalizePlugin(gjsCustomCodeModule),
+  'grapesjs-touch': normalizePlugin(gjsTouchModule),
+  'grapesjs-parser-postcss': normalizePlugin(gjsParserPostCssModule),
+  'grapesjs-tooltip': normalizePlugin(gjsTooltipModule),
+  'grapesjs-tui-image-editor': normalizePlugin(gjsTuiImageEditorModule),
+  'grapesjs-typed': normalizePlugin(gjsTypedModule),
+  'grapesjs-style-bg': normalizePlugin(gjsStyleBgModule),
+  'grapesjs-navbar': normalizePlugin(gjsNavbarModule),
 };
 
-Object.entries( pluginRegistry ).forEach( ( [ key, plugin ] ) => {
-    globalThis[ key ] = plugin;
-} );
+Object.entries(pluginRegistry).forEach(([key, plugin]) => {
+  globalThis[key] = plugin;
+});
 
 globalThis.ckeditorBlockPlugin = ckeditorBlockPlugin;
 globalThis.ckeditorRtePlugin = ckeditorRtePlugin;

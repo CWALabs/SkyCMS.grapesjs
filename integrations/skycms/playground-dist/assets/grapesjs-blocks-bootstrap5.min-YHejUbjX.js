@@ -1,4 +1,31 @@
-import{g as getDefaultExportFromCjs}from"./index-DrZFFO5f.js";function _mergeNamespaces(e,t){for(var n=0;n<t.length;n++){const o=t[n];if(typeof o!="string"&&!Array.isArray(o)){for(const r in o)if(r!=="default"&&!(r in e)){const a=Object.getOwnPropertyDescriptor(o,r);a&&Object.defineProperty(e,r,a.get?a:{enumerable:!0,get:()=>o[r]})}}}return Object.freeze(Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}))}var grapesjsBlocksBootstrap5_min$2={exports:{}},hasRequiredGrapesjsBlocksBootstrap5_min;function requireGrapesjsBlocksBootstrap5_min(){return hasRequiredGrapesjsBlocksBootstrap5_min||(hasRequiredGrapesjsBlocksBootstrap5_min=1,(function(module,exports$1){(function(t,n){module.exports=n()})(self,()=>(()=>{var __webpack_modules__={"./src/bootstrap-btn-sizes.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+import { g as getDefaultExportFromCjs } from './index-DrZFFO5f.js';
+function _mergeNamespaces(e, t) {
+  for (var n = 0; n < t.length; n++) {
+    const o = t[n];
+    if (typeof o != 'string' && !Array.isArray(o)) {
+      for (const r in o)
+        if (r !== 'default' && !(r in e)) {
+          const a = Object.getOwnPropertyDescriptor(o, r);
+          a && Object.defineProperty(e, r, a.get ? a : { enumerable: !0, get: () => o[r] });
+        }
+    }
+  }
+  return Object.freeze(Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }));
+}
+var grapesjsBlocksBootstrap5_min$2 = { exports: {} },
+  hasRequiredGrapesjsBlocksBootstrap5_min;
+function requireGrapesjsBlocksBootstrap5_min() {
+  return (
+    hasRequiredGrapesjsBlocksBootstrap5_min ||
+      ((hasRequiredGrapesjsBlocksBootstrap5_min = 1),
+      (function (module, exports$1) {
+        (function (t, n) {
+          module.exports = n();
+        })(self, () =>
+          (() => {
+            var __webpack_modules__ = {
+                './src/bootstrap-btn-sizes.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -7,13 +34,19 @@ import{g as getDefaultExportFromCjs}from"./index-DrZFFO5f.js";function _mergeNam
   'sm': 'Small'
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/bootstrap-btn-sizes.js?`)}),"./src/bootstrap-contexts.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/bootstrap-btn-sizes.js?`);
+                },
+                './src/bootstrap-contexts.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (['primary', 'secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark']);
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/bootstrap-contexts.js?`)}),"./src/commands.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/bootstrap-contexts.js?`);
+                },
+                './src/commands.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -22,7 +55,10 @@ import{g as getDefaultExportFromCjs}from"./index-DrZFFO5f.js";function _mergeNam
   var commands = editor.Commands;
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/commands.js?`)}),"./src/components.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/commands.js?`);
+                },
+                './src/components.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -309,7 +345,10 @@ import{g as getDefaultExportFromCjs}from"./index-DrZFFO5f.js";function _mergeNam
   }
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components.js?`)}),"./src/components/Alert.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components.js?`);
+                },
+                './src/components/Alert.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AlertBlock: () => (/* binding */ AlertBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -373,7 +412,10 @@ var AlertBlock = function AlertBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Alert.js?`)}),"./src/components/Badge.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Alert.js?`);
+                },
+                './src/components/Badge.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   BadgeBlock: () => (/* binding */ BadgeBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -447,7 +489,10 @@ var BadgeBlock = function BadgeBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Badge.js?`)}),"./src/components/Button.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Badge.js?`);
+                },
+                './src/components/Button.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ButtonBlock: () => (/* binding */ ButtonBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -585,7 +630,14 @@ var ButtonBlock = function ButtonBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Button.js?`)}),"./src/components/ButtonGroup.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Button.js?`);
+                },
+                './src/components/ButtonGroup.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ButtonGroupBlock: () => (/* binding */ ButtonGroupBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -665,7 +717,14 @@ var ButtonGroupBlock = function ButtonGroupBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/ButtonGroup.js?`)}),"./src/components/ButtonLink.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/ButtonGroup.js?`);
+                },
+                './src/components/ButtonLink.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ButtonLinkBlock: () => (/* binding */ ButtonLinkBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -806,7 +865,14 @@ var ButtonLinkBlock = function ButtonLinkBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/ButtonLink.js?`)}),"./src/components/ButtonToolbar.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/ButtonLink.js?`);
+                },
+                './src/components/ButtonToolbar.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ButtonToolbarBlock: () => (/* binding */ ButtonToolbarBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -856,7 +922,10 @@ var ButtonToolbarBlock = function ButtonToolbarBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/ButtonToolbar.js?`)}),"./src/components/Card.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/ButtonToolbar.js?`);
+                },
+                './src/components/Card.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   CardBlock: () => (/* binding */ CardBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1213,7 +1282,10 @@ var CardBlock = function CardBlock(bm, c) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Card.js?`)}),"./src/components/Checkbox.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Card.js?`);
+                },
+                './src/components/Checkbox.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   CheckboxBlock: () => (/* binding */ CheckboxBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1288,7 +1360,10 @@ var CheckboxBlock = function CheckboxBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Checkbox.js?`)}),"./src/components/Collapse.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Checkbox.js?`);
+                },
+                './src/components/Collapse.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   CollapseBlock: () => (/* binding */ CollapseBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1410,7 +1485,10 @@ var CollapseBlock = function CollapseBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Collapse.js?`)}),"./src/components/Column.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Collapse.js?`);
+                },
+                './src/components/Column.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ColumnBlock: () => (/* binding */ ColumnBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1747,7 +1825,14 @@ var ColumnBlock = function ColumnBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Column.js?`)}),"./src/components/ColumnBreak.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Column.js?`);
+                },
+                './src/components/ColumnBreak.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ColumnBreakBlock: () => (/* binding */ ColumnBreakBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1788,7 +1873,14 @@ var ColumnBreakBlock = function ColumnBreakBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/ColumnBreak.js?`)}),"./src/components/Container.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/ColumnBreak.js?`);
+                },
+                './src/components/Container.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ContainerBlock: () => (/* binding */ ContainerBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -1840,7 +1932,10 @@ var ContainerBlock = function ContainerBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Container.js?`)}),"./src/components/Default.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Container.js?`);
+                },
+                './src/components/Default.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -1993,7 +2088,10 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Default.js?`)}),"./src/components/Dropdown.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Default.js?`);
+                },
+                './src/components/Dropdown.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   DropDownBlock: () => (/* binding */ DropDownBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2210,7 +2308,14 @@ var DropDownBlock = function DropDownBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Dropdown.js?`)}),"./src/components/FileInput.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Dropdown.js?`);
+                },
+                './src/components/FileInput.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   FileInputBlock: () => (/* binding */ FileInputBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2264,7 +2369,10 @@ var FileInputBlock = function FileInputBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/FileInput.js?`)}),"./src/components/Form.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/FileInput.js?`);
+                },
+                './src/components/Form.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   FormBlock: () => (/* binding */ FormBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2440,7 +2548,10 @@ var FormBlock = function FormBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Form.js?`)}),"./src/components/Header.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Form.js?`);
+                },
+                './src/components/Header.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   HeaderBlock: () => (/* binding */ HeaderBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2524,7 +2635,10 @@ var HeaderBlock = function HeaderBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Header.js?`)}),"./src/components/Image.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Header.js?`);
+                },
+                './src/components/Image.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ImageBlock: () => (/* binding */ ImageBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2579,7 +2693,10 @@ var ImageBlock = function ImageBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Image.js?`)}),"./src/components/Input.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Image.js?`);
+                },
+                './src/components/Input.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   InputBlock: () => (/* binding */ InputBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2649,7 +2766,14 @@ var InputBlock = function InputBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Input.js?`)}),"./src/components/InputGroup.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Input.js?`);
+                },
+                './src/components/InputGroup.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   InputGroupBlock: () => (/* binding */ InputGroupBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2701,7 +2825,10 @@ var InputGroupBlock = function InputGroupBlock(bm, label, c) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/InputGroup.js?`)}),"./src/components/Label.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/InputGroup.js?`);
+                },
+                './src/components/Label.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   LabelBlock: () => (/* binding */ LabelBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2746,7 +2873,10 @@ var LabelBlock = function LabelBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Label.js?`)}),"./src/components/Link.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Label.js?`);
+                },
+                './src/components/Link.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   LinkBlock: () => (/* binding */ LinkBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2895,7 +3025,10 @@ var LinkBlock = function LinkBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Link.js?`)}),"./src/components/List.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Link.js?`);
+                },
+                './src/components/List.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ListBlock: () => (/* binding */ ListBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2951,7 +3084,10 @@ var ListBlock = function ListBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/List.js?`)}),"./src/components/ListItem.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/List.js?`);
+                },
+                './src/components/ListItem.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ListItemBlock: () => (/* binding */ ListItemBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -2998,7 +3134,14 @@ var ListItemBlock = function ListItemBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/ListItem.js?`)}),"./src/components/MediaObject.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/ListItem.js?`);
+                },
+                './src/components/MediaObject.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   MediaObjectBlock: () => (/* binding */ MediaObjectBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3054,7 +3197,14 @@ var MediaObjectBlock = function MediaObjectBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/MediaObject.js?`)}),"./src/components/Paragraph.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/MediaObject.js?`);
+                },
+                './src/components/Paragraph.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   ParagraphBlock: () => (/* binding */ ParagraphBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3105,7 +3255,10 @@ var ParagraphBlock = function ParagraphBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Paragraph.js?`)}),"./src/components/Radio.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Paragraph.js?`);
+                },
+                './src/components/Radio.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   RadioBlock: () => (/* binding */ RadioBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3151,7 +3304,10 @@ var RadioBlock = function RadioBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Radio.js?`)}),"./src/components/Row.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Radio.js?`);
+                },
+                './src/components/Row.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   RowBlock: () => (/* binding */ RowBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3204,7 +3360,10 @@ var RowBlock = function RowBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Row.js?`)}),"./src/components/Select.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Row.js?`);
+                },
+                './src/components/Select.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   SelectBlock: () => (/* binding */ SelectBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3311,7 +3470,10 @@ var SelectBlock = function SelectBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Select.js?`)}),"./src/components/Text.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Select.js?`);
+                },
+                './src/components/Text.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   TextBlock: () => (/* binding */ TextBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3352,7 +3514,10 @@ var TextBlock = function TextBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Text.js?`)}),"./src/components/Textarea.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Text.js?`);
+                },
+                './src/components/Textarea.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   TextareaBlock: () => (/* binding */ TextareaBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3400,7 +3565,10 @@ var TextareaBlock = function TextareaBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Textarea.js?`)}),"./src/components/tabs/Tab.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/Textarea.js?`);
+                },
+                './src/components/tabs/Tab.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -3454,7 +3622,14 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/tabs/Tab.js?`)}),"./src/components/tabs/TabPane.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/tabs/Tab.js?`);
+                },
+                './src/components/tabs/TabPane.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -3519,7 +3694,14 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/tabs/TabPane.js?`)}),"./src/components/tabs/TabsNavigation.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/tabs/TabPane.js?`);
+                },
+                './src/components/tabs/TabsNavigation.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   TabsBlock: () => (/* binding */ TabsBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3630,7 +3812,14 @@ var TabsBlock = function TabsBlock(bm, c) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/tabs/TabsNavigation.js?`)}),"./src/components/tabs/TabsPanes.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/tabs/TabsNavigation.js?`);
+                },
+                './src/components/tabs/TabsPanes.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -3684,7 +3873,14 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/tabs/TabsPanes.js?`)}),"./src/components/tabs/constants.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/tabs/TabsPanes.js?`);
+                },
+                './src/components/tabs/constants.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -3712,7 +3908,14 @@ var tabPaneName = "".concat(prefix, "tab-pane");
   tabPaneId: "data-".concat(tabPaneName)
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/tabs/constants.js?`)}),"./src/components/video/Embed.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/tabs/constants.js?`);
+                },
+                './src/components/video/Embed.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -3774,7 +3977,14 @@ var tabPaneName = "".concat(prefix, "tab-pane");
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/video/Embed.js?`)}),"./src/components/video/Video.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/video/Embed.js?`);
+                },
+                './src/components/video/Video.js': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   VideoBlock: () => (/* binding */ VideoBlock),
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -3831,7 +4041,10 @@ var VideoBlock = function VideoBlock(bm, label) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/video/Video.js?`)}),"./src/devices.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/components/video/Video.js?`);
+                },
+                './src/devices.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -3919,7 +4132,10 @@ var VideoBlock = function VideoBlock(bm, label) {
   }
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/devices.js?`)}),"./src/index.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/devices.js?`);
+                },
+                './src/index.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -4097,7 +4313,10 @@ var loadCss = function loadCss(editor) {
   loadCss(editor, options);
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/index.js?`)}),"./src/traits.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/index.js?`);
+                },
+                './src/traits.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
@@ -4233,7 +4452,10 @@ var loadCss = function loadCss(editor) {
   });
 });
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/traits.js?`)}),"./src/utils.js":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/traits.js?`);
+                },
+                './src/utils.js': (__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   capitalize: () => (/* binding */ capitalize),
 /* harmony export */   elHasClass: () => (/* binding */ elHasClass)
@@ -4250,166 +4472,391 @@ var capitalize = function capitalize(phrase) {
 };
 
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/utils.js?`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/button.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/utils.js?`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/button.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg class=\\"gjs-block-svg\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n    <path class=\\"gjs-block-svg-path\\" d=\\"M22,9 C22,8.4 21.5,8 20.75,8 L3.25,8 C2.5,8 2,8.4 2,9 L2,15 C2,15.6 2.5,16 3.25,16 L20.75,16 C21.5,16 22,15.6 22,15 L22,9 Z M21,15 L3,15 L3,9 L21,9 L21,15 Z\\" fill-rule=\\"nonzero\\"></path>\\n    <rect class=\\"gjs-block-svg-path\\" x=\\"4\\" y=\\"11.5\\" width=\\"16\\" height=\\"1\\"></rect>\\n</svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/button.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/caret-square-down-regular.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/button.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/caret-square-down-regular.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"far\\" data-icon=\\"caret-square-down\\" class=\\"svg-inline--fa fa-caret-square-down fa-w-14\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 448 512\\"><path fill=\\"currentColor\\" d=\\"M125.1 208h197.8c10.7 0 16.1 13 8.5 20.5l-98.9 98.3c-4.7 4.7-12.2 4.7-16.9 0l-98.9-98.3c-7.7-7.5-2.3-20.5 8.4-20.5zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-48 346V86c0-3.3-2.7-6-6-6H54c-3.3 0-6 2.7-6 6v340c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/caret-square-down-regular.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/certificate-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/caret-square-down-regular.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/certificate-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"certificate\\" class=\\"svg-inline--fa fa-certificate fa-w-16\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\"><path fill=\\"currentColor\\" d=\\"M458.622 255.92l45.985-45.005c13.708-12.977 7.316-36.039-10.664-40.339l-62.65-15.99 17.661-62.015c4.991-17.838-11.829-34.663-29.661-29.671l-61.994 17.667-15.984-62.671C337.085.197 313.765-6.276 300.99 7.228L256 53.57 211.011 7.229c-12.63-13.351-36.047-7.234-40.325 10.668l-15.984 62.671-61.995-17.667C74.87 57.907 58.056 74.738 63.046 92.572l17.661 62.015-62.65 15.99C.069 174.878-6.31 197.944 7.392 210.915l45.985 45.005-45.985 45.004c-13.708 12.977-7.316 36.039 10.664 40.339l62.65 15.99-17.661 62.015c-4.991 17.838 11.829 34.663 29.661 29.671l61.994-17.667 15.984 62.671c4.439 18.575 27.696 24.018 40.325 10.668L256 458.61l44.989 46.001c12.5 13.488 35.987 7.486 40.325-10.668l15.984-62.671 61.994 17.667c17.836 4.994 34.651-11.837 29.661-29.671l-17.661-62.015 62.65-15.99c17.987-4.302 24.366-27.367 10.664-40.339l-45.984-45.004z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/certificate-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/check-square-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/certificate-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/check-square-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"check-square\\" class=\\"svg-inline--fa fa-check-square fa-w-14\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 448 512\\"><path fill=\\"currentColor\\" d=\\"M400 480H48c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h352c26.51 0 48 21.49 48 48v352c0 26.51-21.49 48-48 48zm-204.686-98.059l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.248-16.379-6.249-22.628 0L184 302.745l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.25 16.379 6.25 22.628.001z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/check-square-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/circle-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/check-square-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/circle-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"circle\\" class=\\"svg-inline--fa fa-circle fa-w-16\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\"><path fill=\\"currentColor\\" d=\\"M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/circle-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/columns-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/circle-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/columns-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"columns\\" class=\\"svg-inline--fa fa-columns fa-w-16\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\"><path fill=\\"currentColor\\" d=\\"M464 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V80c0-26.51-21.49-48-48-48zM224 416H64V160h160v256zm224 0H288V160h160v256z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/columns-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/compress-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/columns-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/compress-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"compress\\" class=\\"svg-inline--fa fa-compress fa-w-14\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 448 512\\"><path fill=\\"currentColor\\" d=\\"M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/compress-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/credit-card-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/compress-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/credit-card-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"credit-card\\" class=\\"svg-inline--fa fa-credit-card fa-w-18\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 576 512\\"><path fill=\\"currentColor\\" d=\\"M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/credit-card-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/dot-circle-regular.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/credit-card-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/dot-circle-regular.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"far\\" data-icon=\\"dot-circle\\" class=\\"svg-inline--fa fa-dot-circle fa-w-16\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\"><path fill=\\"currentColor\\" d=\\"M256 56c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m0-48C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 168c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/dot-circle-regular.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/ellipsis-h-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/dot-circle-regular.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/ellipsis-h-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"ellipsis-h\\" class=\\"svg-inline--fa fa-ellipsis-h fa-w-16\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\"><path fill=\\"currentColor\\" d=\\"M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/ellipsis-h-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/equals-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/ellipsis-h-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/equals-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"equals\\" class=\\"svg-inline--fa fa-equals fa-w-14\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 448 512\\"><path fill=\\"currentColor\\" d=\\"M416 304H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32zm0-192H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/equals-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/exclamation-triangle-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/equals-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/exclamation-triangle-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"exclamation-triangle\\" class=\\"svg-inline--fa fa-exclamation-triangle fa-w-18\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 576 512\\"><path fill=\\"currentColor\\" d=\\"M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/exclamation-triangle-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/file-input.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/exclamation-triangle-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/file-input.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg class=\\"gjs-block-svg\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n    <path class=\\"gjs-block-svg-path\\" d=\\"M22,9 C22,8.4 21.5,8 20.75,8 L3.25,8 C2.5,8 2,8.4 2,9 L2,15 C2,15.6 2.5,16 3.25,16 L20.75,16 C21.5,16 22,15.6 22,15 L22,9 Z M21,15 L3,15 L3,9 L21,9 L21,15 Z\\"></path>\\n    <polygon class=\\"gjs-block-svg-path\\" points=\\"4 10 5 10 5 14 4 14\\"></polygon>\\n</svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/file-input.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/font-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/file-input.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/font-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"font\\" class=\\"svg-inline--fa fa-font fa-w-14\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 448 512\\"><path fill=\\"currentColor\\" d=\\"M432 416h-23.41L277.88 53.69A32 32 0 0 0 247.58 32h-47.16a32 32 0 0 0-30.3 21.69L39.41 416H16a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16h-19.58l23.3-64h152.56l23.3 64H304a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h128a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zM176.85 272L224 142.51 271.15 272z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/font-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/form-group.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/font-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/form-group.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg class=\\"gjs-block-svg\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n    <path class=\\"gjs-block-svg-path\\" d=\\"M22,9 C22,8.4 21.5,8 20.75,8 L3.25,8 C2.5,8 2,8.4 2,9 L2,15 C2,15.6 2.5,16 3.25,16 L20.75,16 C21.5,16 22,15.6 22,15 L22,9 Z M21,15 L3,15 L3,9 L21,9 L21,15 Z\\"></path>\\n    <polygon class=\\"gjs-block-svg-path\\" points=\\"4 10 5 10 5 14 4 14\\"></polygon>\\n</svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/form-group.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/form.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/form-group.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/form.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg class=\\"gjs-block-svg\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n    <path class=\\"gjs-block-svg-path\\" d=\\"M22,5.5 C22,5.2 21.5,5 20.75,5 L3.25,5 C2.5,5 2,5.2 2,5.5 L2,8.5 C2,8.8 2.5,9 3.25,9 L20.75,9 C21.5,9 22,8.8 22,8.5 L22,5.5 Z M21,8 L3,8 L3,6 L21,6 L21,8 Z\\" fill-rule=\\"nonzero\\"></path>\\n    <path class=\\"gjs-block-svg-path\\" d=\\"M22,10.5 C22,10.2 21.5,10 20.75,10 L3.25,10 C2.5,10 2,10.2 2,10.5 L2,13.5 C2,13.8 2.5,14 3.25,14 L20.75,14 C21.5,14 22,13.8 22,13.5 L22,10.5 Z M21,13 L3,13 L3,11 L21,11 L21,13 Z\\" fill-rule=\\"nonzero\\"></path>\\n    <rect class=\\"gjs-block-svg-path\\" x=\\"2\\" y=\\"15\\" width=\\"10\\" height=\\"3\\" rx=\\"0.5\\"></rect>\\n</svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/form.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/heading-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/form.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/heading-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"heading\\" class=\\"svg-inline--fa fa-heading fa-w-16\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\"><path fill=\\"currentColor\\" d=\\"M448 96v320h32a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16H320a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32V288H160v128h32a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16H32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32V96H32a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16h160a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16h-32v128h192V96h-32a16 16 0 0 1-16-16V48a16 16 0 0 1 16-16h160a16 16 0 0 1 16 16v32a16 16 0 0 1-16 16z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/heading-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/image-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/heading-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/image-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"image\\" class=\\"svg-inline--fa fa-image fa-w-16\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\"><path fill=\\"currentColor\\" d=\\"M464 448H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48zM112 120c-30.928 0-56 25.072-56 56s25.072 56 56 56 56-25.072 56-56-25.072-56-56-56zM64 384h384V272l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L208 320l-55.515-55.515c-4.686-4.686-12.284-4.686-16.971 0L64 336v48z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/image-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/input-group.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/image-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/input-group.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg class=\\"gjs-block-svg\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n    <path class=\\"gjs-block-svg-path\\" d=\\"M22,9 C22,8.4 21.5,8 20.75,8 L3.25,8 C2.5,8 2,8.4 2,9 L2,15 C2,15.6 2.5,16 3.25,16 L20.75,16 C21.5,16 22,15.6 22,15 L22,9 Z M21,15 L3,15 L3,9 L21,9 L21,15 Z\\"></path>\\n    <polygon class=\\"gjs-block-svg-path\\" points=\\"4 10 5 10 5 14 4 14\\"></polygon>\\n</svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/input-group.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/input.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/input-group.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/input.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg class=\\"gjs-block-svg\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n    <path class=\\"gjs-block-svg-path\\" d=\\"M22,9 C22,8.4 21.5,8 20.75,8 L3.25,8 C2.5,8 2,8.4 2,9 L2,15 C2,15.6 2.5,16 3.25,16 L20.75,16 C21.5,16 22,15.6 22,15 L22,9 Z M21,15 L3,15 L3,9 L21,9 L21,15 Z\\"></path>\\n    <polygon class=\\"gjs-block-svg-path\\" points=\\"4 10 5 10 5 14 4 14\\"></polygon>\\n</svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/input.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/label.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/input.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/label.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg class=\\"gjs-block-svg\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n    <path class=\\"gjs-block-svg-path\\" d=\\"M22,11.875 C22,11.35 21.5,11 20.75,11 L3.25,11 C2.5,11 2,11.35 2,11.875 L2,17.125 C2,17.65 2.5,18 3.25,18 L20.75,18 C21.5,18 22,17.65 22,17.125 L22,11.875 Z M21,17 L3,17 L3,12 L21,12 L21,17 Z\\" fill-rule=\\"nonzero\\"></path>\\n    <rect class=\\"gjs-block-svg-path\\" x=\\"2\\" y=\\"5\\" width=\\"14\\" height=\\"5\\" rx=\\"0.5\\"></rect>\\n    <polygon class=\\"gjs-block-svg-path\\" fill-rule=\\"nonzero\\" points=\\"4 13 5 13 5 16 4 16\\"></polygon>\\n</svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/label.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/link-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/label.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/link-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"link\\" class=\\"svg-inline--fa fa-link fa-w-16\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\"><path fill=\\"currentColor\\" d=\\"M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/link-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/paragraph-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/link-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/paragraph-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"paragraph\\" class=\\"svg-inline--fa fa-paragraph fa-w-14\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 448 512\\"><path fill=\\"currentColor\\" d=\\"M448 48v32a16 16 0 0 1-16 16h-48v368a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16V96h-32v368a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16V352h-32a160 160 0 0 1 0-320h240a16 16 0 0 1 16 16z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/paragraph-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/select-input.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/paragraph-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/select-input.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg class=\\"gjs-block-svg\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n    <path class=\\"gjs-block-svg-path\\" d=\\"M22,9 C22,8.4 21.5,8 20.75,8 L3.25,8 C2.5,8 2,8.4 2,9 L2,15 C2,15.6 2.5,16 3.25,16 L20.75,16 C21.5,16 22,15.6 22,15 L22,9 Z M21,15 L3,15 L3,9 L21,9 L21,15 Z\\" fill-rule=\\"nonzero\\"></path>\\n    <polygon class=\\"gjs-block-svg-path\\" transform=\\"translate(18.500000, 12.000000) scale(1, -1) translate(-18.500000, -12.000000) \\" points=\\"18.5 11 20 13 17 13\\"></polygon>\\n    <rect class=\\"gjs-block-svg-path\\" x=\\"4\\" y=\\"11.5\\" width=\\"11\\" height=\\"1\\"></rect>\\n</svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/select-input.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/textarea.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/select-input.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/textarea.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg class=\\"gjs-block-svg\\" viewBox=\\"0 0 24 24\\" xmlns=\\"http://www.w3.org/2000/svg\\">\\n    <path class=\\"gjs-block-svg-path\\" d=\\"M22,7.5 C22,6.6 21.5,6 20.75,6 L3.25,6 C2.5,6 2,6.6 2,7.5 L2,16.5 C2,17.4 2.5,18 3.25,18 L20.75,18 C21.5,18 22,17.4 22,16.5 L22,7.5 Z M21,17 L3,17 L3,7 L21,7 L21,17 Z\\"></path>\\n    <polygon class=\\"gjs-block-svg-path\\" points=\\"4 8 5 8 5 12 4 12\\"></polygon>\\n    <polygon class=\\"gjs-block-svg-path\\" points=\\"19 7 20 7 20 17 19 17\\"></polygon>\\n    <polygon class=\\"gjs-block-svg-path\\" points=\\"20 8 21 8 21 9 20 9\\"></polygon>\\n    <polygon class=\\"gjs-block-svg-path\\" points=\\"20 15 21 15 21 16 20 16\\"></polygon>\\n</svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/textarea.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/window-maximize-solid.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/textarea.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/window-maximize-solid.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fas\\" data-icon=\\"window-maximize\\" class=\\"svg-inline--fa fa-window-maximize fa-w-16\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\"><path fill=\\"currentColor\\" d=\\"M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-16 160H64v-84c0-6.6 5.4-12 12-12h360c6.6 0 12 5.4 12 12v84z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/window-maximize-solid.svg?./node_modules/raw-loader/dist/cjs.js`)}),"./node_modules/raw-loader/dist/cjs.js!./src/icons/youtube-brands.svg":((__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{eval(`__webpack_require__.r(__webpack_exports__);
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/window-maximize-solid.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+                './node_modules/raw-loader/dist/cjs.js!./src/icons/youtube-brands.svg': (
+                  __unused_webpack_module,
+                  __webpack_exports__,
+                  __webpack_require__,
+                ) => {
+                  eval(`__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("<svg aria-hidden=\\"true\\" width=\\"24\\" height=\\"50\\" focusable=\\"false\\" data-prefix=\\"fab\\" data-icon=\\"youtube\\" class=\\"svg-inline--fa fa-youtube fa-w-18\\" role=\\"img\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 576 512\\"><path fill=\\"currentColor\\" d=\\"M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z\\"></path></svg>\\n");
 
-//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/youtube-brands.svg?./node_modules/raw-loader/dist/cjs.js`)})},__webpack_module_cache__={};function __webpack_require__(e){var t=__webpack_module_cache__[e];if(t!==void 0)return t.exports;var n=__webpack_module_cache__[e]={exports:{}};return __webpack_modules__[e](n,n.exports,__webpack_require__),n.exports}__webpack_require__.d=(e,t)=>{for(var n in t)__webpack_require__.o(t,n)&&!__webpack_require__.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},__webpack_require__.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),__webpack_require__.r=e=>{typeof Symbol<"u"&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})};var __webpack_exports__=__webpack_require__("./src/index.js");return __webpack_exports__})())})(grapesjsBlocksBootstrap5_min$2)),grapesjsBlocksBootstrap5_min$2.exports}var grapesjsBlocksBootstrap5_minExports=requireGrapesjsBlocksBootstrap5_min();const grapesjsBlocksBootstrap5_min=getDefaultExportFromCjs(grapesjsBlocksBootstrap5_minExports),grapesjsBlocksBootstrap5_min$1=_mergeNamespaces({__proto__:null,default:grapesjsBlocksBootstrap5_min},[grapesjsBlocksBootstrap5_minExports]);export{grapesjsBlocksBootstrap5_min$1 as g};
+//# sourceURL=webpack://grapesjs-blocks-bootstrap5/./src/icons/youtube-brands.svg?./node_modules/raw-loader/dist/cjs.js`);
+                },
+              },
+              __webpack_module_cache__ = {};
+            function __webpack_require__(e) {
+              var t = __webpack_module_cache__[e];
+              if (t !== void 0) return t.exports;
+              var n = (__webpack_module_cache__[e] = { exports: {} });
+              return __webpack_modules__[e](n, n.exports, __webpack_require__), n.exports;
+            }
+            (__webpack_require__.d = (e, t) => {
+              for (var n in t)
+                __webpack_require__.o(t, n) &&
+                  !__webpack_require__.o(e, n) &&
+                  Object.defineProperty(e, n, { enumerable: !0, get: t[n] });
+            }),
+              (__webpack_require__.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t)),
+              (__webpack_require__.r = (e) => {
+                typeof Symbol < 'u' &&
+                  Symbol.toStringTag &&
+                  Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
+                  Object.defineProperty(e, '__esModule', { value: !0 });
+              });
+            var __webpack_exports__ = __webpack_require__('./src/index.js');
+            return __webpack_exports__;
+          })(),
+        );
+      })(grapesjsBlocksBootstrap5_min$2)),
+    grapesjsBlocksBootstrap5_min$2.exports
+  );
+}
+var grapesjsBlocksBootstrap5_minExports = requireGrapesjsBlocksBootstrap5_min();
+const grapesjsBlocksBootstrap5_min = getDefaultExportFromCjs(grapesjsBlocksBootstrap5_minExports),
+  grapesjsBlocksBootstrap5_min$1 = _mergeNamespaces({ __proto__: null, default: grapesjsBlocksBootstrap5_min }, [
+    grapesjsBlocksBootstrap5_minExports,
+  ]);
+export { grapesjsBlocksBootstrap5_min$1 as g };

@@ -325,7 +325,9 @@ function shouldUseSkyCmsCkEditor(el) {
     return false;
   }
 
-  return true;
+  // Only activate CKEditor for Sky Page Editor components (opt-in via data-editor-config).
+  // All other editable components fall back to GrapesJS native contenteditable editing.
+  return editorConfig === 'ckeditor' || editorConfig === 'skycms';
 }
 
 export const ckeditorRtePlugin = (editor) => {

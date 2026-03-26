@@ -20,9 +20,9 @@ const DEBUG_HOOK_REGISTRY_KEY = '__skycmsDebugHooks';
  * @returns {Record<string, { description: string, registeredAt: string }>}
  */
 function getDebugHookRegistry() {
-    const registry = globalThis[ DEBUG_HOOK_REGISTRY_KEY ] || {};
-    globalThis[ DEBUG_HOOK_REGISTRY_KEY ] = registry;
-    return registry;
+  const registry = globalThis[DEBUG_HOOK_REGISTRY_KEY] || {};
+  globalThis[DEBUG_HOOK_REGISTRY_KEY] = registry;
+  return registry;
 }
 
 /**
@@ -33,29 +33,29 @@ function getDebugHookRegistry() {
  * @param {string} [description=''] Optional human-readable description stored in a registry.
  * @returns {() => unknown} The registered hook function.
  */
-export function registerGlobalDebugHook( hookName, getState, description = '' ) {
-    if ( typeof hookName !== 'string' || !hookName.trim() ) {
-        throw new Error( 'registerGlobalDebugHook requires a non-empty hookName.' );
-    }
+export function registerGlobalDebugHook(hookName, getState, description = '') {
+  if (typeof hookName !== 'string' || !hookName.trim()) {
+    throw new Error('registerGlobalDebugHook requires a non-empty hookName.');
+  }
 
-    if ( typeof getState !== 'function' ) {
-        throw new Error( 'registerGlobalDebugHook requires getState to be a function.' );
-    }
+  if (typeof getState !== 'function') {
+    throw new Error('registerGlobalDebugHook requires getState to be a function.');
+  }
 
-    const existingHook = globalThis[ hookName ];
+  const existingHook = globalThis[hookName];
 
-    if ( typeof existingHook === 'function' ) {
-        return existingHook;
-    }
+  if (typeof existingHook === 'function') {
+    return existingHook;
+  }
 
-    const hook = () => getState();
-    globalThis[ hookName ] = hook;
+  const hook = () => getState();
+  globalThis[hookName] = hook;
 
-    const registry = getDebugHookRegistry();
-    registry[ hookName ] = {
-        description,
-        registeredAt: new Date().toISOString()
-    };
+  const registry = getDebugHookRegistry();
+  registry[hookName] = {
+    description,
+    registeredAt: new Date().toISOString(),
+  };
 
-    return hook;
+  return hook;
 }

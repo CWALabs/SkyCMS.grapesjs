@@ -104,4 +104,95 @@ describe('PropertyView', () => {
       expect(view.getInputEl().value).toEqual(defValue);
     });
   });
+
+  describe('Color input normalization', () => {
+    class ColorPropertyView extends PropertyView {
+      templateInput() {
+        return `
+          <div class="field">
+            <input type="color"/>
+          </div>
+        `;
+      }
+    }
+
+    beforeEach(() => {
+      view = new ColorPropertyView({
+        model,
+        config: { em },
+      });
+      fixtures.innerHTML = '';
+      view.render();
+      fixtures.appendChild(view.el);
+    });
+
+    test('Named colors are converted to hex', () => {
+      view.setValue('black');
+      expect(view.getInputEl().value).toEqual('#000000');
+    });
+
+    test('RGB colors are converted to hex', () => {
+      view.setValue('rgb(255, 255, 255)');
+      expect(view.getInputEl().value).toEqual('#ffffff');
+    });
+
+    test('Custom update receives normalized color value', () => {
+      let updateValue = '';
+
+      class CustomUpdateColorPropertyView extends PropertyView {
+        templateInput() {
+          return `
+            <div class="field">
+              <input type="color"/>
+            </div>
+          `;
+        }
+
+        update = ({ value }: any) => {
+          updateValue = value;
+        };
+      }
+
+      const customView = new CustomUpdateColorPropertyView({
+        model: new Property({ property: 'color-test' }, { em }),
+        config: { em },
+      });
+
+      customView.render();
+      fixtures.appendChild(customView.el);
+      customView.setValue('black');
+
+      expect(updateValue).toEqual('#000000');
+      customView.remove();
+    });
+
+    test('Custom update normalizes direct color input assignment', () => {
+      class CustomUpdateColorPropertyView extends PropertyView {
+        templateInput() {
+          return `
+            <div class="field">
+              <input type="color"/>
+            </div>
+          `;
+        }
+
+        update = ({ el }: any) => {
+          const input = el.querySelector('input');
+          input.value = 'white';
+        };
+      }
+
+      const customView = new CustomUpdateColorPropertyView({
+        model: new Property({ property: 'color-test' }, { em }),
+        config: { em },
+      });
+
+      customView.render();
+      fixtures.appendChild(customView.el);
+      customView.setValue('white');
+
+      expect(customView.getInputEl().value).toEqual('#ffffff');
+      customView.remove();
+    });
+  });
 });

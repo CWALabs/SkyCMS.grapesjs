@@ -6,6 +6,250 @@ import Property from '../model/Property';
 import { StyleProps } from '../../domain_abstract/model/StyleableModel';
 
 const clearProp = 'data-clear-style';
+const HEX_COLOR_REG = /^#([0-9a-f]{3}|[0-9a-f]{6})$/i;
+const RGB_COLOR_REG = /^rgba?\(([^)]+)\)$/i;
+const NAMED_COLOR_TO_HEX: Record<string, string> = {
+  black: '#000000',
+  white: '#ffffff',
+};
+
+const toSixDigitHexColor = (value: string) => {
+  if (!HEX_COLOR_REG.test(value)) return '';
+  const normalized = value.toLowerCase();
+  if (normalized.length === 7) return normalized;
+  const shortHex = normalized.slice(1);
+  return `#${shortHex[0]}${shortHex[0]}${shortHex[1]}${shortHex[1]}${shortHex[2]}${shortHex[2]}`;
+};
+
+const rgbStringToHexColor = (value: string) => {
+  const match = value.match(RGB_COLOR_REG);
+  if (!match) return '';
+  const channels = match[1]
+    .split(',')
+    .slice(0, 3)
+    .map((part) => parseInt(part.trim(), 10));
+  if (channels.length !== 3 || channels.some((channel) => Number.isNaN(channel))) return '';
+
+  return `#${channels
+    .map((channel) => Math.max(0, Math.min(255, channel)).toString(16).padStart(2, '0'))
+    .join('')}`;
+};
+
+const normalizeColorInputValue = (value: string) => {
+  const rawValue = value.trim();
+  if (!rawValue) return '';
+
+  const namedHexColor = NAMED_COLOR_TO_HEX[rawValue.toLowerCase()];
+  if (namedHexColor) return namedHexColor;
+
+  const hexColor = toSixDigitHexColor(rawValue);
+  if (hexColor) return hexColor;
+
+  const rgbHexColor = rgbStringToHexColor(rawValue);
+  if (rgbHexColor) return rgbHexColor;
+
+  if (typeof document === 'undefined') return '';
+  const colorProbe = document.createElement('option');
+  colorProbe.style.color = rawValue;
+  if (!colorProbe.style.color) return '';
+
+  const parsedHexColor = toSixDigitHexColor(colorProbe.style.color);
+  if (parsedHexColor) return parsedHexColor;
+
+  return rgbStringToHexColor(colorProbe.style.color);
+};
+
+const normalizeColorOptions = (options: any) => {
+  if (!Array.isArray(options)) return;
+
+  options.forEach((option, index) => {
+    if (typeof option === 'string') {
+      const normalizedColor = normalizeColorInputValue(option);
+      if (normalizedColor) {
+        options[index] = normalizedColor;
+      }
+      return;
+    }
+
+    if (!option || typeof option !== 'object') return;
+
+    ['value', 'id', 'color'].forEach((key) => {
+      const current = option[key];
+      if (typeof current !== 'string') return;
+      const normalizedColor = normalizeColorInputValue(current);
+      if (normalizedColor) {
+        option[key] = normalizedColor;
+      }
+    });
+
+    if (Array.isArray(option.options)) {
+      normalizeColorOptions(option.options);
+    }
+  });
+};
+
+const withNormalizedColorPropertyReads = <T>(property: any, run: () => T) => {
+  if (!property || typeof property !== 'object') return run();
+
+  const originalGet = typeof property.get === 'function' ? property.get : undefined;
+  const originalGetValue = typeof property.getValue === 'function' ? property.getValue : undefined;
+  const originalGetDefaultValue =
+    typeof property.getDefaultValue === 'function' ? property.getDefaultValue : undefined;
+  const originalGetFullValue = typeof property.getFullValue === 'function' ? property.getFullValue : undefined;
+  const originalGetInternalFullValue =
+    typeof property.__getFullValue === 'function' ? property.__getFullValue : undefined;
+
+  const normalizeColorString = (candidate: any) => {
+    if (typeof candidate !== 'string') return candidate;
+    return normalizeColorInputValue(candidate) || candidate;
+  };
+
+  if (originalGet) {
+    property.get = function (key: any, ...args: any[]) {
+      const value = originalGet.call(this, key, ...args);
+      if (key === 'options') {
+        normalizeColorOptions(value);
+        return value;
+      }
+
+      if (key === 'value' || key === 'default' || key === 'defaults') {
+        return normalizeColorString(value);
+      }
+
+      return value;
+    };
+  }
+
+  if (originalGetValue) {
+    property.getValue = function (...args: any[]) {
+      return normalizeColorString(originalGetValue.call(this, ...args));
+    };
+  }
+
+  if (originalGetDefaultValue) {
+    property.getDefaultValue = function (...args: any[]) {
+      return normalizeColorString(originalGetDefaultValue.call(this, ...args));
+    };
+  }
+
+  if (originalGetFullValue) {
+    property.getFullValue = function (...args: any[]) {
+      return normalizeColorString(originalGetFullValue.call(this, ...args));
+    };
+  }
+
+  if (originalGetInternalFullValue) {
+    property.__getFullValue = function (...args: any[]) {
+      return normalizeColorString(originalGetInternalFullValue.call(this, ...args));
+    };
+  }
+
+  try {
+    return run();
+  } finally {
+    if (originalGet) property.get = originalGet;
+    if (originalGetValue) property.getValue = originalGetValue;
+    if (originalGetDefaultValue) property.getDefaultValue = originalGetDefaultValue;
+    if (originalGetFullValue) property.getFullValue = originalGetFullValue;
+    if (originalGetInternalFullValue) property.__getFullValue = originalGetInternalFullValue;
+  }
+};
+
+const withColorInputAssignmentNormalization = <T>(el: HTMLElement, run: () => T) => {
+  const windows = new Set<Window>();
+
+  const addWindowAndChildren = (candidate?: Window | null) => {
+    if (!candidate || windows.has(candidate)) return;
+    windows.add(candidate);
+
+    try {
+      const { frames } = candidate;
+      for (let i = 0; i < frames.length; i += 1) {
+        addWindowAndChildren(frames[i]);
+      }
+    } catch (error) {
+      // Ignore cross-origin frame traversal errors.
+    }
+  };
+
+  if (typeof window !== 'undefined') {
+    addWindowAndChildren(window);
+
+    try {
+      addWindowAndChildren(window.top);
+    } catch (error) {
+      // Ignore cross-origin top window access.
+    }
+
+    try {
+      addWindowAndChildren(window.parent);
+    } catch (error) {
+      // Ignore cross-origin parent window access.
+    }
+  }
+
+  addWindowAndChildren(el?.ownerDocument?.defaultView);
+
+  const restoreFns: Array<() => void> = [];
+
+  windows.forEach((currentWindow) => {
+    const InputEl = (currentWindow as any).HTMLInputElement as typeof HTMLInputElement;
+    const ElementEl = (currentWindow as any).Element as typeof Element;
+    if (!InputEl?.prototype || !ElementEl?.prototype) return;
+
+    const valueDescriptor = Object.getOwnPropertyDescriptor(InputEl.prototype, 'value');
+    const valueSetter = valueDescriptor?.set;
+    const valueGetter = valueDescriptor?.get;
+    const setAttribute = ElementEl.prototype.setAttribute;
+
+    if (!valueDescriptor || !valueSetter || !setAttribute) return;
+
+    Object.defineProperty(InputEl.prototype, 'value', {
+      configurable: true,
+      enumerable: valueDescriptor.enumerable,
+      get() {
+        return valueGetter ? valueGetter.call(this) : '';
+      },
+      set(nextValue: string) {
+        if ((this as HTMLInputElement).type === 'color') {
+          const value = typeof nextValue === 'string' ? nextValue : `${nextValue ?? ''}`;
+          const normalizedColor = normalizeColorInputValue(value);
+          if (!normalizedColor) return;
+          valueSetter.call(this, normalizedColor);
+          return;
+        }
+
+        valueSetter.call(this, nextValue);
+      },
+    });
+
+    ElementEl.prototype.setAttribute = function (name: string, value: string) {
+      if (
+        this instanceof InputEl &&
+        this.type === 'color' &&
+        String(name).toLowerCase() === 'value'
+      ) {
+        const normalizedColor = normalizeColorInputValue(typeof value === 'string' ? value : `${value ?? ''}`);
+        if (!normalizedColor) return;
+        setAttribute.call(this, name, normalizedColor);
+        return;
+      }
+
+      setAttribute.call(this, name, value);
+    };
+
+    restoreFns.push(() => {
+      Object.defineProperty(InputEl.prototype, 'value', valueDescriptor);
+      ElementEl.prototype.setAttribute = setAttribute;
+    });
+  });
+
+  try {
+    return run();
+  } finally {
+    restoreFns.forEach((restore) => restore());
+  }
+};
 
 export interface ICustomPropertyView {
   create?: (data: ReturnType<PropertyView['_getClbOpts']>) => any;
@@ -181,13 +425,28 @@ export default class PropertyView extends View<Property> {
   setValue(value: string) {
     const { model } = this;
     const result = isUndefined(value) || value === '' ? model.getDefaultValue() : value;
-    if (this.update) return this.__update(result);
+    if (this.update) return this.__update(this.__normalizeInputValue(result));
     this.__setValueInput(result);
+  }
+
+  __normalizeInputValue(value: string) {
+    const normalizedColor = normalizeColorInputValue(value);
+    return normalizedColor || value;
   }
 
   __setValueInput(value: string) {
     const input = this.getInputEl();
-    input && (input.value = value);
+    if (!input) return;
+    const isColorValue = input.type === 'color' || this.model?.getType?.() === 'color';
+
+    if (isColorValue) {
+      const normalizedColor = normalizeColorInputValue(value);
+      if (!normalizedColor) return;
+      input.value = normalizedColor;
+      return;
+    }
+
+    input.value = value;
   }
 
   getInputEl() {
@@ -215,11 +474,38 @@ export default class PropertyView extends View<Property> {
 
   __update(value: string) {
     const update = this.update && this.update.bind(this);
+    const input = this.getInputEl();
+    const isColorValue = input?.type === 'color' || this.model?.getType?.() === 'color';
+    const normalizedValue = isColorValue ? this.__normalizeInputValue(value) : value;
+
+    if (isColorValue) {
+      const attrs = (this.model as any)?.attributes;
+      const modelValue = attrs?.value;
+      const modelDefault = attrs?.default;
+      
+      // Normalize model attributes so direct access reads normalized values
+      if (attrs && modelValue) {
+        const normalizedModel = normalizeColorInputValue(modelValue);
+        if (normalizedModel) attrs.value = normalizedModel;
+      }
+      if (attrs && modelDefault) {
+        const normalizedDefault = normalizeColorInputValue(modelDefault);
+        if (normalizedDefault) attrs.default = normalizedDefault;
+      }
+      
+      normalizeColorOptions(attrs?.options);
+      normalizeColorOptions((this.model as any)?.get?.('options'));
+    }
+
     update &&
-      update({
-        ...this._getClbOpts(),
-        value,
-      });
+      withNormalizedColorPropertyReads(this.model, () =>
+        withColorInputAssignmentNormalization(this.el, () => {
+          update({
+            ...this._getClbOpts(),
+            value: normalizedValue,
+          });
+        })
+      );
   }
 
   __change(...args: any) {

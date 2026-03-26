@@ -5,6 +5,7 @@
   "scripts": {
     "start": "pnpm --filter grapesjs start",
     "start:docs": "pnpm --filter @grapesjs/docs docs",
+    "docs:skycms": "node -e \"console.log('SkyCMS developer docs: ./DEVELOPER-DOCS.md\\nSkyCMS integration docs: ./integrations/skycms/docs/README.md')\"",
     "test": "pnpm -r run test",
     "docs": "pnpm --filter @grapesjs/docs docs",
     "docs:api": "pnpm --filter @grapesjs/docs docs:api",

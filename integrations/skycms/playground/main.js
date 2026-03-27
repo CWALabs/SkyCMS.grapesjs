@@ -6,66 +6,6 @@ import { ckeditorBlockPlugin } from '../src/custom/ckeditorblockplugin.js';
 import { cosmosImageWidgetPlugin } from '../src/custom/imagecontainerplugin.js';
 import { articleBlockPlugin } from '../src/custom/articleblockplugin.js';
 
-const SKY_PAGE_DEBUG_PROPERTY = '__skyPageEditorDriverStubDebugMode';
-const SKY_PAGE_DEBUG_STORAGE_KEY = 'skycms:skyPageEditorDriverStubDebugMode';
-const DEFAULT_SKY_PAGE_DEBUG_MODE = true;
-
-function getStoredSkyPageDebugMode() {
-  try {
-    const storedValue = globalThis.localStorage?.getItem(SKY_PAGE_DEBUG_STORAGE_KEY);
-
-    if (storedValue === 'true') {
-      return true;
-    }
-
-    if (storedValue === 'false') {
-      return false;
-    }
-  } catch {
-    // Ignore storage access failures.
-  }
-
-  return DEFAULT_SKY_PAGE_DEBUG_MODE;
-}
-
-function setSkyPageDebugMode(enabled) {
-  const nextValue = Boolean(enabled);
-  globalThis[SKY_PAGE_DEBUG_PROPERTY] = nextValue;
-
-  try {
-    globalThis.localStorage?.setItem(SKY_PAGE_DEBUG_STORAGE_KEY, String(nextValue));
-  } catch {
-    // Ignore storage access failures.
-  }
-
-  return nextValue;
-}
-
-function addSkyPageDebugToggle() {
-  const root = document.createElement('div');
-  root.className = 'sky-debug-toggle';
-  root.innerHTML = `
-      <label class="sky-debug-toggle__label" title="Toggle Sky Page Editor lifecycle console tracing">
-        <input class="sky-debug-toggle__input" type="checkbox" />
-        <span>Sky Debug</span>
-      </label>
-    `;
-
-  const input = root.querySelector('.sky-debug-toggle__input');
-
-  if (!input) {
-    return;
-  }
-
-  input.checked = setSkyPageDebugMode(getStoredSkyPageDebugMode());
-  input.addEventListener('change', (event) => {
-    const checked = event?.target?.checked;
-    setSkyPageDebugMode(checked);
-  });
-
-  document.body.appendChild(root);
-}
-
 function normalizePlugin(pluginModule) {
   return pluginModule.default || pluginModule;
 }
@@ -286,8 +226,6 @@ async function fallbackBootstrap5Blocks(editor) {
 }
 
 async function start() {
-  addSkyPageDebugToggle();
-
   const layoutPlugins = await getLayoutPlugins();
 
   const editor = grapesjs.init({

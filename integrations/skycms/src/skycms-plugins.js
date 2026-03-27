@@ -1,6 +1,5 @@
 import * as gjsBlocksBasicModule from 'grapesjs-blocks-basic';
 import * as gjsFormsModule from 'grapesjs-plugin-forms';
-import * as gjsCkeditorModule from 'grapesjs-plugin-ckeditor';
 import * as gjsPresetWebpageModule from 'grapesjs-preset-webpage';
 import * as gjsCountdownModule from 'grapesjs-component-countdown';
 import * as gjsExportModule from 'grapesjs-plugin-export';
@@ -15,7 +14,6 @@ import * as gjsStyleBgModule from 'grapesjs-style-bg';
 import * as gjsNavbarModule from 'grapesjs-navbar';
 import { articleBlockPlugin } from './custom/articleblockplugin.js';
 import { ckeditorBlockPlugin } from './custom/ckeditorblockplugin.js';
-import { ckeditorRtePlugin } from './custom/ckeditorrteplugin.js';
 import { cosmosImageWidgetPlugin } from './custom/imagecontainerplugin.js';
 import { generateGUID } from './custom/generateguid.js';
 import { ccmsArticleTitleHTML, ckeditorBLockComponentHTML } from './custom/component-constants.js';
@@ -27,7 +25,6 @@ function normalizePlugin(pluginModule) {
 const pluginRegistry = {
   'gjs-blocks-basic': normalizePlugin(gjsBlocksBasicModule),
   'grapesjs-plugin-forms': normalizePlugin(gjsFormsModule),
-  'grapesjs-plugin-ckeditor': normalizePlugin(gjsCkeditorModule),
   'grapesjs-preset-webpage': normalizePlugin(gjsPresetWebpageModule),
   'grapesjs-component-countdown': normalizePlugin(gjsCountdownModule),
   'grapesjs-plugin-export': normalizePlugin(gjsExportModule),
@@ -47,7 +44,6 @@ Object.entries(pluginRegistry).forEach(([key, plugin]) => {
 });
 
 globalThis.ckeditorBlockPlugin = ckeditorBlockPlugin;
-globalThis.ckeditorRtePlugin = ckeditorRtePlugin;
 globalThis.articleBlockPlugin = articleBlockPlugin;
 globalThis.cosmosImageWidgetPlugin = cosmosImageWidgetPlugin;
 globalThis.generateGUID = generateGUID;

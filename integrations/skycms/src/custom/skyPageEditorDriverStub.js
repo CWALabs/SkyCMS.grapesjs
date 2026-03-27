@@ -96,7 +96,7 @@ function getDebugStore() {
 registerGlobalDebugHook(
   DEBUG_HOOK_NAME,
   () => getDebugStore(),
-  'Returns Sky Page Editor driver counters and trace history.',
+  'Returns Visual Editor driver counters and trace history.',
 );
 
 /**
@@ -298,7 +298,7 @@ async function createEditorInstance(el) {
   const initPromise = Promise.resolve(createCkEditor(el))
     .then((created) => created || waitForEditorInstanceOnElement(el))
     .catch((error) => {
-      console.warn('Unable to initialize CKEditor instance for Sky Page Editor block.', error);
+      console.warn('Unable to initialize CKEditor instance for Visual Editor block.', error);
       return null;
     })
     .finally(() => {
@@ -324,7 +324,7 @@ async function destroyEditorInstance(instance) {
 }
 
 /**
- * Lifecycle driver for Sky Page Editor block instances.
+ * Lifecycle driver for Visual Editor block instances.
  *
  * Behavior:
  * - tracks instance lifecycle per component via a WeakMap
@@ -378,7 +378,7 @@ export function createSkyPageEditorDriverStub(editor) {
       try {
         view.onActive(event);
       } catch (error) {
-        console.warn('Sky Page Editor driver could not activate view.', error);
+        console.warn('Visual Editor driver could not activate view.', error);
       }
     }
 
@@ -507,7 +507,7 @@ export function createSkyPageEditorDriverStub(editor) {
 
   // Keep this hook to avoid accidental dead-code removals in tests and confirm editor wiring.
   if (!editor) {
-    console.warn('Sky Page Editor driver initialized without editor instance.');
+    console.warn('Visual Editor driver initialized without editor instance.');
   }
 
   return {

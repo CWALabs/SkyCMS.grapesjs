@@ -296,7 +296,6 @@ function createRteHandle(editor, el, editorInstance) {
     __el: el,
     __instance: editorInstance,
     focus() {
-      mountEditorToolbar(editor, el, editorInstance);
       attachEditorInteractionGuards(el, editorInstance);
       focusEditorInstance(el, editorInstance);
     },
@@ -325,7 +324,7 @@ function shouldUseSkyCmsCkEditor(el) {
     return false;
   }
 
-  // Only activate CKEditor for Sky Page Editor components (opt-in via data-editor-config).
+  // Only activate CKEditor for Visual Editor components (opt-in via data-editor-config).
   // All other editable components fall back to GrapesJS native contenteditable editing.
   return editorConfig === 'ckeditor' || editorConfig === 'skycms';
 }
@@ -358,7 +357,6 @@ export const ckeditorRtePlugin = (editor) => {
 
       if (liveInstance) {
         enableEditableSurface(el);
-        mountEditorToolbar(editor, el, liveInstance);
         attachEditorInteractionGuards(el, liveInstance);
         focusEditorStably(el, liveInstance);
 
@@ -413,7 +411,6 @@ export const ckeditorRtePlugin = (editor) => {
       const createdInstance = await el[ckEditorInitPromiseProp];
 
       if (createdInstance) {
-        mountEditorToolbar(editor, el, createdInstance);
         attachEditorInteractionGuards(el, createdInstance);
         focusEditorStably(el, createdInstance);
         return createRteHandle(editor, el, createdInstance);
@@ -432,7 +429,6 @@ export const ckeditorRtePlugin = (editor) => {
     },
 
     disable(el, rte) {
-      hideEditorToolbar(el?.ckeditorInstance || rte?.__instance || rte?.__el?.ckeditorInstance);
       detachEditorInteractionGuards(el);
 
       if (el) {

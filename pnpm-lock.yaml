@@ -171,9 +171,6 @@ importers:
       grapesjs-parser-postcss:
         specifier: ^1.0.3
         version: 1.0.3
-      grapesjs-plugin-ckeditor:
-        specifier: ^1.0.1
-        version: 1.0.1
       grapesjs-plugin-export:
         specifier: ^1.0.12
         version: 1.0.12
@@ -207,7 +204,7 @@ importers:
     devDependencies:
       vite:
         specifier: ^7.1.5
-        version: 7.3.1(@types/node@22.4.1)(sass@1.80.3)(stylus@0.54.8)(terser@5.39.0)
+        version: 7.3.1(sass@1.80.3)(stylus@0.54.8)(terser@5.39.0)
 
   packages/cli:
     dependencies:
@@ -1668,9 +1665,6 @@ packages:
 
   '@types/bonjour@3.5.13':
     resolution: {integrity: sha512-z9fJ5Im06zvUL548KvYNecEVlA7cVDkGUi6kZusb04mpyEFKCIZJvloCcmpmLaIahDpOQGHaHmG6imtPMmPXGQ==}
-
-  '@types/ckeditor4@4.20.7':
-    resolution: {integrity: sha512-Xn4wMey4cSpEtpv0aF9AQaoDT6aYAoqmnKj0g+sWg8Xp3S6hRuec2et45kp9gP69qTuCufEUQnZhBn3o+4UbWQ==}
 
   '@types/connect-history-api-fallback@1.5.4':
     resolution: {integrity: sha512-n6Cr2xS1h4uAulPRdlw6Jl6s1oG8KrVilPN2yUITEs+K48EzMJJ3W1xy8K5eWuFvjp3R74AOIGSmp2UfBJ8HFw==}
@@ -4793,9 +4787,6 @@ packages:
 
   grapesjs-parser-postcss@1.0.3:
     resolution: {integrity: sha512-lfiNRDGdYQT259fUudYD0Z9EKB0DeS9GdCjVqGuJo28rv0WPAdGlpFnvlYgNGurX38ZjIi8qnbEuSSDl8AXFSw==}
-
-  grapesjs-plugin-ckeditor@1.0.1:
-    resolution: {integrity: sha512-ILxmI36udAkLgF+rP5jBtabq88zg04uUYPP60rXa6qTgjXK96vuq21xkh1qZiDGLUYiPVC3jgVPaCO68sH500Q==}
 
   grapesjs-plugin-export@1.0.12:
     resolution: {integrity: sha512-q5rn1dwUYqPwDVnL9dhMxInk2SXWbrJ7OUUjFYk2LGJoT1laN3TZSDlDn/DVp9pCQd7fyHDgLdy8mvaVVmSh6g==}
@@ -10773,8 +10764,6 @@ snapshots:
     dependencies:
       '@types/node': 22.4.1
 
-  '@types/ckeditor4@4.20.7': {}
-
   '@types/connect-history-api-fallback@1.5.4':
     dependencies:
       '@types/express-serve-static-core': 5.0.0
@@ -14757,10 +14746,6 @@ snapshots:
   grapesjs-navbar@1.0.2: {}
 
   grapesjs-parser-postcss@1.0.3: {}
-
-  grapesjs-plugin-ckeditor@1.0.1:
-    dependencies:
-      '@types/ckeditor4': 4.20.7
 
   grapesjs-plugin-export@1.0.12:
     dependencies:
@@ -19541,7 +19526,7 @@ snapshots:
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
 
-  vite@7.3.1(@types/node@22.4.1)(sass@1.80.3)(stylus@0.54.8)(terser@5.39.0):
+  vite@7.3.1(sass@1.80.3)(stylus@0.54.8)(terser@5.39.0):
     dependencies:
       esbuild: 0.27.4
       fdir: 6.5.0(picomatch@4.0.4)
@@ -19550,7 +19535,6 @@ snapshots:
       rollup: 4.60.0
       tinyglobby: 0.2.15
     optionalDependencies:
-      '@types/node': 22.4.1
       fsevents: 2.3.3
       sass: 1.80.3
       stylus: 0.54.8

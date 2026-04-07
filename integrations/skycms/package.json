@@ -42,6 +42,6 @@
     "grapesjs-typed": "^2.0.1"
   },
   "devDependencies": {
-    "vite": "^7.1.5"
+    "vite": "^7.3.2"
   }
 }

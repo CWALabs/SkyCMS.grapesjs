@@ -1,4 +1,4 @@
-import { ccmsArticleTitleHTML, ckeditorBLockComponentHTML } from './component-constants.js';
+import { ccmsArticleTitleHTML, articleBlockBodyComponentHTML } from './component-constants.js';
 import { generateGUID } from './generateguid.js';
 
 const articleBlockMedia =
@@ -20,7 +20,7 @@ export const articleBlockPlugin = (editor) => {
         attributes: {
           class: 'ccms--article--block',
         },
-        components: ccmsArticleTitleHTML + ckeditorBLockComponentHTML,
+        components: ccmsArticleTitleHTML + articleBlockBodyComponentHTML,
       },
     },
   });

@@ -13,10 +13,9 @@ import * as gjsTypedModule from 'grapesjs-typed';
 import * as gjsStyleBgModule from 'grapesjs-style-bg';
 import * as gjsNavbarModule from 'grapesjs-navbar';
 import { articleBlockPlugin } from './custom/articleblockplugin.js';
-import { ckeditorBlockPlugin } from './custom/ckeditorblockplugin.js';
 import { cosmosImageWidgetPlugin } from './custom/imagecontainerplugin.js';
 import { generateGUID } from './custom/generateguid.js';
-import { ccmsArticleTitleHTML, ckeditorBLockComponentHTML } from './custom/component-constants.js';
+import { ccmsArticleTitleHTML, articleBlockBodyComponentHTML } from './custom/component-constants.js';
 
 function normalizePlugin(pluginModule) {
   return pluginModule.default || pluginModule;
@@ -43,9 +42,8 @@ Object.entries(pluginRegistry).forEach(([key, plugin]) => {
   globalThis[key] = plugin;
 });
 
-globalThis.ckeditorBlockPlugin = ckeditorBlockPlugin;
 globalThis.articleBlockPlugin = articleBlockPlugin;
 globalThis.cosmosImageWidgetPlugin = cosmosImageWidgetPlugin;
 globalThis.generateGUID = generateGUID;
 globalThis.ccmsArticleTitleHTML = ccmsArticleTitleHTML;
-globalThis.ckeditorBLockComponentHTML = ckeditorBLockComponentHTML;
+globalThis.articleBlockBodyComponentHTML = articleBlockBodyComponentHTML;
